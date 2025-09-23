@@ -43,7 +43,7 @@
         </header>
         @if (CurrentUser != null)
         {
-            <div class="box user mb-2 d-flex align-items-center justify-content-between gap-3 my-4">
+            <div class="box user mb-2 d-flex align-items-center gap-3 my-4 flex-wrap">
                 <AuthorizeView Policy="@AppPolicies.CanModifySettings">
                     <Authorized>
                         @if (CurrentStore != null)
